@@ -18,3 +18,11 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.js_img_flag {
+  display: inline-block;
+}
+.js_name_country {
+  display: inline-block;
+  margin-left: 20px;
+}
