@@ -40,7 +40,7 @@ const handleNameCountryInput = event => {
             console.log('покажи список країн');
           const markup = data
               .map(({ name, flags }) => `<li class="list-item">
-  <img class="js_img_flag" src= ${flags.svg} alt="" width=50>
+            <img class="js_img_flag" src= ${flags.svg} alt="" width=50>
             <h2 class="js_name_country"> ${name.common} </h2>
               </li>`)
               .join("");
@@ -68,19 +68,4 @@ const handleNameCountryInput = event => {
 
 inputEll.addEventListener('input',debounce(handleNameCountryInput,DEBOUNCE_DELAY));
 
-// function fetchCountries(nameCountry) {
-//  const BaseUrl = `https://restcountries.com/v3.1/name/${nameCountry}?fields=name,flags,capital,population,languages` 
-//    return fetch(BaseUrl)
-//         .then(response => {
-//         console.log(response);
-//             if (!response.ok) {
-//     throw new Error(response.status)
-// }
-//     return response.json()
-// })
-//     .then((data) => { console.log(data) })
-// .catch( (err) => { console.warn(err)})
-// };
 
-
-// fetchCountries('ukr');

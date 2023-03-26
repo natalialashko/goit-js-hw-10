@@ -18,11 +18,19 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+.country-info{
+  margin-left: 40px;
+}
 
 .js_img_flag {
   display: inline-block;
+ 
 }
 .js_name_country {
   display: inline-block;
   margin-left: 20px;
+
 }
+ li {
+  list-style-type: none
+ }
